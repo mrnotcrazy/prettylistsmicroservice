@@ -84,4 +84,4 @@ As listed in the previous coding example receiving data is simple as sleeping fo
 
 ### UML Sequence Diagram(generated using https://www.planttext.com/)
 
-
+![UML](uml.png)
