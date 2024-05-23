@@ -14,7 +14,7 @@ This is a pretty list micro service that takes in comma seperated lists and turn
    ```sh
    git clone https://github.com/mrnotcrazy/prettylistsmicroservice.git
    cd prettylistsmicroservice
-   python3 pretty_list_service.py
+   python3 prettylists.py
 ```
 ### There are four possible styles a default and then three more
 ~~~text
