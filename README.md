@@ -4,6 +4,18 @@
 
 This is a pretty list micro service that takes in comma seperated lists and turns them into a variety of prettier lists(relativly) 
 
+
+### Prerequisites
+
+- Python 3.x
+
+### Installation
+
+   ```sh
+   git clone https://github.com/mrnotcrazy/prettylistsmicroservice.git
+   cd prettylistsmicroservice
+   python3 pretty_list_service.py
+```
 ### There are four possible styles a default and then three more
 ~~~text
 Default:
