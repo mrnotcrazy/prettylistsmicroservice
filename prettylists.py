@@ -1,10 +1,8 @@
 import os
 import time
-#This script created for CS361 at OSU in 2024 by Benjamin Knutson
-
 
 # Set TEST_MODE to True or False
-TEST_MODE = False
+TEST_MODE = True
 
 def process_list(content):
     if content.startswith("list:"):
@@ -21,7 +19,7 @@ def process_list(content):
         # Example of another format, can be customized as needed
         return "\n".join(f"--> {item}" for item in items)
     else:
-        return content  # Return the original content if it doesn't match any of the above formats
+        return 0#do nothing
 
 def read_and_process_file(filename):
     if not os.path.exists(filename):
@@ -31,12 +29,19 @@ def read_and_process_file(filename):
         content = file.read().strip()
 
     if content:
+
         output = process_list(content)
-        if TEST_MODE:
-            print("Content before writing to file:")
-            print(output)
-        with open(filename, 'w') as file:
-            file.write(output)
+        if output == 0:
+            pass
+        else:
+            if TEST_MODE:
+                print("Content read from file:")
+                print(content)
+            if TEST_MODE:
+                print("Content after writing to file:")
+                print(output)
+            with open(filename, 'w') as file:
+                file.write(output)
 
 def main():
     filename = "list.txt"
