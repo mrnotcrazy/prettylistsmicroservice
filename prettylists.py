@@ -1,8 +1,10 @@
 import os
 import time
+#This script created for CS361 at OSU in 2024 by Benjamin Knutson
+
 
 # Set TEST_MODE to True or False
-TEST_MODE = True
+TEST_MODE = False
 
 def process_list(content):
     if content.startswith("list:"):
